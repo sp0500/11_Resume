@@ -37,6 +37,9 @@ Following the definition of the S+core ISA, I undertook the responsibility of le
 The successful adaptation of the GNU toolchain to the S+core architecture was not only achieved, but we also took pride in contributing our achievements to the open-source community.
 
 S+core3(3 pipeline stages) hardware/software co-design and verification:
+The project's objective was to achieve a 30+\% reduction in the code size of S+core and to establish competitiveness with ARM Thumb2. I took on the responsibility of leading the system software team in conducting ISA profiling across various benchmarks and proposing a new ISA for S+core. We developed an ISA profiling environment to analyze ISA version 1, obtaining instruction usage counts, distributions of immediate values, and more. Subsequently, based on the profiled information, we proposed a new ISA that we discussed with the hardware designers.
+
+We then had to re-adapt the toolchain and simulator to this newly proposed ISA and re-conducted profiling. After several iterations, we successfully achieved the goal of reducing code size by 30\%. Concurrently, as the hardware designers were engaged in the development of S+core3 RTL, our team worked on establishing a co-verification environment and verified S+core3 in a similar manner as we had done with the original S+core architecture.
 
 In house ARMV7/V8 CPU system level verification.
 
